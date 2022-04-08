@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profilefriend</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<ion-content parallax-header no-bounce class="bg-modal">
+  <div class="header-image">
+    <ion-button color="light" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="back-button">◄</ion-button>
+  </div>
+  <div class="main-content" text-wrap text-center>
+      <div class="circular"></div>
+      <h2 class="profile-username">Margarito</h2>
+      <p class="profile-description">ocupacion &bull; ubicacion</p>
+      <p class="profile-description">user description aqui va ::: times distance speed </p>
+      <hr>
+      <ion-list no-lines>
+          <ion-item>
+              <ion-icon name="mail" color="primary" item-start></ion-icon>
+              <p>Email: margarito@gmail.com  </p>
+              <a button ion-button href="####" color="primary" item-end medium>Send Email</a>
+          </ion-item>
+          <ion-item>
+              <ion-icon item-start name="logo-whatsapp" color="secondary"></ion-icon>
+              <p>Whatsapp: 664664664</p>
+              <a button ion-button color="secondary" item-end medium href="###">Send Message</a>
+          </ion-item>
+      </ion-list>
+      <h2>Send Request </h2>
+     <ion-button>Add Friend</ion-button>
+  </div>
 
 </ion-content>
