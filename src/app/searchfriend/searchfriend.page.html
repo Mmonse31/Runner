@@ -1,9 +1,15 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>searchfriend</ion-title>
-  </ion-toolbar>
+<ion-header >
+
 </ion-header>
 
-<ion-content>
+<ion-content class="background" >
+  <ion-img class="loginlogo" src="https://stemen8a.000webhostapp.com/runnerx/img/logorunnD.png"></ion-img>
 
+  <ion-label class="texttitle">SEARCH A FRIEND</ion-label>
+  <div class="login__field">
+    <i class="login__icon fas fa-user"></i>
+    <input type="text" class="login__input" placeholder="Email ">
+  </div>
+
+  <ion-button  class="register" expand="block" [routerLink]="['/profilefriend']" routerLinkActive="router-link-active" >Search</ion-button>
 </ion-content>

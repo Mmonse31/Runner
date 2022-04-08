@@ -10,6 +10,13 @@ export class FinishSucessPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var count = 5;
+    setInterval(function(){
+        count--;
+        if (count == 0) {
+            window.location.href = '/home'; 
+        }
+    },1000);
   }
 
 }
