@@ -8,8 +8,8 @@
   <ion-label class="texttitle">SEARCH A FRIEND</ion-label>
   <div class="login__field">
     <i class="login__icon fas fa-user"></i>
-    <input type="text" class="login__input" placeholder="Email ">
+    <input type="text" class="login__input" required ngModel [(ngModel)]="email" name="email"  placeholder="Email ">
   </div>
 
-  <ion-button  class="register" expand="block" [routerLink]="['/profilefriend']" routerLinkActive="router-link-active" >Search</ion-button>
+  <ion-button (click)="searchFriend()" class="register" expand="block"  routerLinkActive="router-link-active" >Search</ion-button>
 </ion-content>
